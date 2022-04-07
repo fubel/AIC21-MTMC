@@ -63,7 +63,7 @@ if __name__ == '__main__':
         cid = int(cam_path[-3:])
         f_w = open(opj(save_dir, '{}.pkl'.format(cam_path)), 'wb')
         cur_bias = cid_bias[cid]
-        mot_path = opj(data_dir, cam_path,'{}_mot_feat.pkl'.format(cam_path))
+        mot_path = opj(data_dir, cam_path,'{}_dets_feat.pkl'.format(cam_path))
         new_mot_path = opj(data_dir, cam_path, '{}_mot_feat_break.pkl'.format(cam_path))
         print(new_mot_path)
         zones.set_cam(cid)
